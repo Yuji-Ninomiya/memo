@@ -1,9 +1,9 @@
 # コマンド備忘録
 
 ## MarkDown
-| C-c C-c m                                  | HTMLファイルを出力                 |  
-| C-c C-c p                                  | 一時ファイル作成、ブラウザで表示   |  
-| C-c C-c l , M-x markdown-live-preview-mode | ライブプレビューモードを有効にする |  
+| C-c C-c m                                  | HTMLファイルを出力                 |
+| C-c C-c p                                  | 一時ファイル作成、ブラウザで表示   |
+| C-c C-c l , M-x markdown-live-preview-mode | ライブプレビューモードを有効にする |
 
 ## terminal 関連
 ・カレントディレクトリ以下に hogehoge の記述があるか探す。  
@@ -58,23 +58,23 @@ $ pkg-config --modversion opencv
 ```
 
 ## Emacs 関連
-| C-x 2                  | window の分割（縦に2分割） |  
-| C-x 3                  | window の分割（横に2分割） |  
-| C-x o                  | 分割したwindowの移動       |  
-| M-% <- Alt + Shift + % | 文字列の置換               |  
+| C-x 2                  | window の分割（縦に2分割） |
+| C-x 3                  | window の分割（横に2分割） |
+| C-x o                  | 分割したwindowの移動       |
+| M-% <- Alt + Shift + % | 文字列の置換               |
 
 ・undo tree : `C-x-u`からの戻りたいところ選択。`C-D`で差分の表示。`C-P`で戻る？  
 
 ### package.elの使い方
 | M-x package-list-packages | パッケージ一覧表示 |  
 #### 一覧表示中の操作
-| h | help                                 |  
-| i | インストールパッケージの選択         |  
-| u | 選択の解除                           |  
-| x | インストール/消去の実行              |  
-| d | 消去するパッケージの選択             |  
-| q | 終了                                 |  
-| U | アップデート可能なパッケージを全選択 |  
+| h | help                                 |
+| i | インストールパッケージの選択         |
+| u | 選択の解除                           |
+| x | インストール/消去の実行              |
+| d | 消去するパッケージの選択             |
+| q | 終了                                 |
+| U | アップデート可能なパッケージを全選択 |
 
 ## CMakeの方法
 ```
