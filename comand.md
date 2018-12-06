@@ -8,7 +8,7 @@
 | C-c C-c p | 一時ファイル作成、ブラウザで表示   |
 | C-c C-c l | ライブプレビューモードを有効にする |
 
-## terminal 関連
+## Terminal操作関連
 ・カレントディレクトリ以下に hogehoge の記述があるか探す。  
 ```
 $ grep -r hogehoge
@@ -23,7 +23,7 @@ $ git clone -b <branch_name> <URL>
 ・コミットしてプッシュするまで  
 ```
 $ git add <file_name>  
-$ git commit -m "\[something_new] hoge"  
+$ git commit -m "[something_new] hoge"  
 $ git push <local_branch> <remote_branch>  
 ```
 
@@ -47,12 +47,17 @@ $ git commit -m "cleanup" <- メッセージは自由
 ```  
 個別に消すなら` git rm <file_name>`  
 
-・フォークしてその先で変更を加える  
+### フォークしてその先で変更を加える  
 1. 対象のページから自分のリポジトリに Fork   
 2. 自分のローカル環境に clone (`$ git clone https://hogehoge`)  
 3. クローンした開発環境下で作業  
 4. 更新した内容をフォークしたリポジトリに commit  
 5. fork したリポジトリからオリジナルへ pull request  
+
+#### フォーク元のやつを引っ張ってくる
+```
+$ git fetch [fork元]  
+```
 
 ## バージョンチェック関連
 ・OpenCV のバージョン確認  
@@ -60,14 +65,14 @@ $ git commit -m "cleanup" <- メッセージは自由
 $ pkg-config --modversion opencv
 ```
 
-## Emacs 関連
+## Emacs関連
 
 | コマンド              | 実行内容                   |
 |:---------------------:|:--------------------------:|
 | C-x 2                 | window の分割（縦に2分割） |
 | C-x 3                 | window の分割（横に2分割） |
 | C-x o                 | 分割したwindowの移動       |
-| M-% (Alt + Shift + %) | 文字列の置換               |
+| M-% (Alt + Shift + %) | 文字列の置換（実行：space, パス：n）              |
 
 ・undo tree : `C-x-u`からの戻りたいところ選択。`C-D`で差分の表示。`C-P`で戻る？  
 
@@ -104,3 +109,6 @@ $ ~/build
 $ sudo make uninstall <-- /usr/local からソースを消す  
 ```
 
+## ROS関連
+・src内にあるpackage.xmlに記述のある依存関係のパッケージを一括ダウンロード
+`rosdep install -iry --from-paths src`
