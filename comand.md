@@ -14,56 +14,17 @@
 $ grep -r hogehoge
 ```
 
-## Github関連
-・ブランチを指定して git clone  
-```
-$ git clone -b <branch_name> <URL>
-```
-
-・コミットしてプッシュするまで  
-```
-$ git add <file_name>  
-$ git commit -m "[something_new] hoge"  
-$ git push <local_branch> <remote_branch>  
-```
-
-・フォルダごと add  
-```
-$ git add <folder_name>  
-```
-
-・all オプション  
-```
-\#全部 add  
-$ git add -A  
-\#拡張子指定(ex. .txt)  
-$ git add -A *.txt  
-```
-
-・ローカルで削除したファイルのリモートへの反映（git管理下のファイルで、変更されたものすべてを add ）  
-```
-$ git add -u  
-$ git commit -m "cleanup" <- メッセージは自由  
-```  
-個別に消すなら` git rm <file_name>`  
-
-### フォークしてその先で変更を加える  
-1. 対象のページから自分のリポジトリに Fork   
-2. 自分のローカル環境に clone (`$ git clone https://hogehoge`)  
-3. クローンした開発環境下で作業  
-4. 更新した内容をフォークしたリポジトリに commit  
-5. fork したリポジトリからオリジナルへ pull request  
-
-#### フォーク元のやつを引っ張ってくる
-```
-$ git fetch [fork元]  
-```
-
 ## バージョンチェック関連
 ・OpenCV のバージョン確認  
 ```
 $ pkg-config --modversion opencv
 ```
+・PCLのバージョン
+```
+$ cd ~/catkin_ws/devel/lib/<package_name>/
+$ ldd <package_name> | grep -e "pcl"
+```
+とすると、使用されている PCL のパッケージとそのバージョンが表示され、それがどこに置かれているか表示される。（<package_name> はコンパイルされたやつ）
 
 ## CMakeの方法
 ```
