@@ -1,7 +1,6 @@
 # Githubコマンド備忘録
 
 ### 参考ページ
-> [Markdown 記法サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)
 > [リモートからの取得とリモートへの反映(fetch, pull, push)](https://qiita.com/forest1/items/db5ac003d310449743ca)
 
 
