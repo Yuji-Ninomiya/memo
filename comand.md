@@ -1,14 +1,5 @@
 # コマンド備忘録
 
-## MarkDown
-> [Markdown 記法サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)
-
-| コマンド  | 実行内容                           |
-|:---------:|:----------------------------------:|
-| C-c C-c m | HTMLファイルを出力                 |
-| C-c C-c p | 一時ファイル作成、ブラウザで表示   |
-| C-c C-c l | ライブプレビューモードを有効にする |
-
 ## Terminal操作関連
 ・カレントディレクトリ以下に hogehoge の記述があるか探す。  
 ```
@@ -45,3 +36,7 @@ $ sudo make uninstall <-- /usr/local からソースを消す
 ## ROS関連
 ・src内にあるpackage.xmlに記述のある依存関係のパッケージを一括ダウンロード
 `rosdep install -iry --from-paths src`
+
+
+## Sublime Text
+・`Alt` + `Shift` + `1` or `2` or `3` ; 画面を数字の数に横分割

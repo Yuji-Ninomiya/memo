@@ -1,8 +1,8 @@
 # Githubコマンド備忘録
 
 ### 参考ページ
-> [リモートからの取得とリモートへの反映(fetch, pull, push)](https://qiita.com/forest1/items/db5ac003d310449743ca)
-
+> [リモートからの取得とリモートへの反映(fetch, pull, push)](https://qiita.com/forest1/items/db5ac003d310449743ca)	
+> [fork元のリポジトリへの変更をforkしたリポジトリに反映する](https://qiita.com/chihiro/items/d018599ef13c35781412)
 
 #### ブランチを指定して git clone  
 ```
@@ -38,10 +38,6 @@ $ git commit -m "cleanup" <- メッセージは自由
 
 
 ### ブランチの削除
-#### ローカルブランチ
-```
-$ git branch -d [branch_name]
-```
 #### リモートブランチ
 一度ローカルのブランチに checkout してそこからリモートを削除
 ```
