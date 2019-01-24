@@ -1,5 +1,8 @@
 # コマンド備忘録
 
+> インストールは以下を参照 or 検索してオリジナルをインストール
+ https://github.com/AriYu/dotfiles/tree/master/.emacs.d
+
 ## Emacs関連
 
 | コマンド 　           | 実行内容                             |

@@ -38,5 +38,3 @@ $ sudo make uninstall <-- /usr/local からソースを消す
 `rosdep install -iry --from-paths src`
 
 
-## Sublime Text
-・`Alt` + `Shift` + `1` or `2` or `3` ; 画面を数字の数に横分割
